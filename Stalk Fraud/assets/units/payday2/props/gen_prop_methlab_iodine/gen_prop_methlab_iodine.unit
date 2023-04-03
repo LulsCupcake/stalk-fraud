@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<unit type="gen" slot="1">
+	<object file="units/payday2/props/gen_prop_methlab_iodine/gen_prop_methlab_iodine" />
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+	</extensions>
+</unit>

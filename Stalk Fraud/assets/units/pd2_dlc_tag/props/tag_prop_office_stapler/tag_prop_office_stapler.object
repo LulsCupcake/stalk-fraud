@@ -1,0 +1,24 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_tag/props/tag_prop_office_stapler/tag_prop_office_stapler" orientation_object="rp_tag_prop_office_stapler" />
+	<sequence_manager file="units/pd2_dlc_tag/props/tag_prop_office_stapler/tag_prop_office_stapler" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_tag_prop_office_stapler" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+			<object name="c_box_02" collision_type="box" padding="-2.5" />
+			<object name="c_box_03" collision_type="box" padding="-2.5" />
+		</body>
+		<body name="body_dynamic" enabled="false" template="dynamic">
+			<object name="rp_tag_prop_office_stapler" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+			<object name="c_box_02" collision_type="box" padding="-2.5" />
+			<object name="c_box_03" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="plastic">
+		<decal_mesh name="dm_plastic" enabled="true" material="plastic" />
+	</decal_surfaces>
+	<graphics>
+		<object name="g_swineline" enabled="true" />
+	</graphics>
+</dynamic_object>

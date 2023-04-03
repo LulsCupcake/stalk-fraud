@@ -1,0 +1,120 @@
+<table>
+	<unit>
+		<sequence editable_state="true" name="'activate'" triggable="false">
+			<animation_group enabled="true" from="0/30" name="'anim'" to="75/30"/>
+			<sound action="'play'" event="'swatturret_mount'" object="'es_explode'"/>
+		</sequence>
+		<sequence editable_state="true" name="'deactivate'" triggable="false">
+			<animation_group enabled="true" from="75/30" name="'anim'" speed="-1" to="0/30"/>
+			<sound action="'play'" event="'swatturret_mount'" object="'es_explode'"/>
+		</sequence>
+		<sequence editable_state="true" name="'repair_start_seq'" triggable="false">
+			<run_sequence name="'int_seq_sparks_enable'"/>
+			<sound action="'play'" event="'swatturret_repair_loop'" object="'es_explode'"/>
+		</sequence>
+		<sequence editable_state="true" name="'repair_complete_seq'" triggable="false">
+			<run_sequence name="'int_seq_sparks_disable'"/>
+			<sound action="'play'" event="'swatturret_repair_stop'" object="'es_explode'"/>
+		</sequence>
+		<sequence editable_state="false" name="'explode'" once="true" triggable="false">
+			<physic_effect name="'physic_effects/push_sphere'" param1="100" param2="800" target="dest_unit:get_object( Idstring('es_explode') )"/>
+			<effect name="'effects/payday2/particles/explosions/sentry_explosion'" parent="object( 'es_explode' )" position="v()"/>
+			<sound action="'play'" event="'swatturret_repair_stop'" object="'es_explode'"/>
+			<sound action="'play'" event="'swatturret_destroy'" object="'es_explode'"/>
+			<run_sequence name="'int_seq_shield_detach'"/>
+			<body enabled="false" name="'body_weakspot'"/>
+			<body enabled="false" name="'body_base'"/>
+			<body enabled="false" name="'body_rotor'"/>
+			<body enabled="false" name="'body_rotor1'"/>
+			<body enabled="false" name="'body_rotor2'"/>
+			<body enabled="false" name="'body'"/>
+			<body enabled="false" name="'body_side_plating'"/>
+			<object enabled="false" name="'g_body'"/>
+			<object enabled="false" name="'g_gun'"/>
+			<object enabled="false" name="'g_gun_glass'"/>
+			<object enabled="false" name="'g_shield'"/>
+			<object enabled="false" name="'g_rotor'"/>
+			<object enabled="false" name="'g_rotor1'"/>
+			<decal_mesh enabled="false" name="'g_body'"/>
+			<decal_mesh enabled="false" name="'g_gun'"/>
+			<decal_mesh enabled="false" name="'g_shield'"/>
+			<decal_mesh enabled="false" name="'g_rotor'"/>
+			<decal_mesh enabled="false" name="'g_rotor1'"/>
+			<run_sequence name="'state_light_off'"/>
+			<spawn_unit name="'units/pd2_dlc_des/vehicles/des_aa_turret/spawn_turret_debris'" position="object_pos('anim_y_gun')" rotation="object_rot('anim_y_gun')"/>
+			<effect_spawner enabled="false" name="'es_small_damage'"/>
+			<effect_spawner enabled="false" name="'es_medium_damage'"/>
+			<effect_spawner enabled="false" name="'es_large_damage'"/>
+			<effect_spawner enabled="false" name="'es_aftersmoke'"/>
+			<effect_spawner enabled="false" name="'es_sparks_loop'"/>
+		</sequence>
+		<sequence editable_state="false" name="'disable'" once="true" triggable="false">
+			<animation_group enabled="true" from="75/30" name="'anim'" speed="-1" to="0/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'normal_difficulty'" triggable="true">
+			<material_config name="'units/pd2_dlc_des/vehicles/des_aa_turret/des_aa_turret'"/>
+		</sequence>
+		<sequence editable_state="true" name="'hard_difficulty'" triggable="true">
+			<material_config name="'units/pd2_dlc_des/vehicles/des_aa_turret/des_aa_turret_hard'"/>
+		</sequence>
+		<sequence editable_state="true" name="'state_light_on'" triggable="true">
+			<effect_spawner enabled="true" name="'es_light'"/>
+			<light enabled="true" name="'li_light'"/>
+		</sequence>
+		<sequence editable_state="true" name="'state_light_off'" triggable="true">
+			<effect_spawner enabled="false" name="'es_light'"/>
+			<light enabled="false" name="'li_light'"/>
+		</sequence>
+		<sequence editable_state="true" name="'int_seq_small_damage'" triggable="false">
+			<effect_spawner enabled="true" name="'es_small_damage'"/>
+			<effect_spawner enabled="false" name="'es_medium_damage'"/>
+			<effect_spawner enabled="false" name="'es_large_damage'"/>
+		</sequence>
+		<sequence editable_state="true" name="'int_seq_medium_damage'" triggable="false">
+			<effect_spawner enabled="false" name="'es_small_damage'"/>
+			<effect_spawner enabled="true" name="'es_medium_damage'"/>
+			<effect_spawner enabled="false" name="'es_large_damage'"/>
+		</sequence>
+		<sequence editable_state="true" name="'int_seq_large_damage'" triggable="false">
+			<effect_spawner enabled="false" name="'es_small_damage'"/>
+			<effect_spawner enabled="false" name="'es_medium_damage'"/>
+			<effect_spawner enabled="true" name="'es_large_damage'"/>
+		</sequence>
+		<sequence editable_state="true" name="'int_seq_no_damage'" triggable="false">
+			<effect_spawner enabled="false" name="'es_small_damage'"/>
+			<effect_spawner enabled="false" name="'es_medium_damage'"/>
+			<effect_spawner enabled="false" name="'es_large_damage'"/>
+		</sequence>
+		<sequence editable_state="true" name="'int_seq_sparks_enable'" triggable="true">
+			<effect_spawner enabled="true" name="'es_sparks_loop'"/>
+		</sequence>
+		<sequence editable_state="true" name="'int_seq_sparks_disable'" triggable="true">
+			<effect_spawner enabled="false" name="'es_sparks_loop'"/>
+		</sequence>
+		<sequence editable_state="false" name="'int_seq_shield_detach'" once="false" triggable="false">
+			<physic_effect name="'physic_effects/push_sphere'" param1="65" param2="200" target="dest_unit:get_object( Idstring('es_explode') )"/>
+			<body enabled="false" name="'body_shields'"/>
+			<body enabled="true" name="'body_weakspot'"/>
+			<object enabled="false" name="'g_front_shield'"/>
+			<decal_mesh enabled="false" name="'g_front_shield'"/>
+			<spawn_unit name="'units/pd2_dlc_des/vehicles/des_aa_turret/spawn_shield_front'" position="object_pos('spawn_shield_front')" rotation="object_rot('spawn_shield_front')"/>
+			<object enabled="false" name="'g_upper_shield'"/>
+			<decal_mesh enabled="false" name="'g_upper_shield'"/>
+			<spawn_unit name="'units/pd2_dlc_des/vehicles/des_aa_turret/spawn_shield_upper'" position="object_pos('spawn_shield_upper')" rotation="object_rot('spawn_shield_upper')"/>
+			<object enabled="false" name="'g_front_shield_glass'"/>
+			<decal_mesh enabled="false" name="'g_front_shield_glass'"/>
+			<debug text="'Last bullets damage ammount = ' .. damage"/>
+		</sequence>
+		<sequence editable_state="false" name="'int_seq_shield_attach'" once="false" triggable="false">
+			<body enabled="true" name="'body_shields'"/>
+			<body enabled="false" name="'body_weakspot'"/>
+			<object enabled="true" name="'g_front_shield'"/>
+			<decal_mesh enabled="true" name="'g_front_shield'"/>
+			<object enabled="true" name="'g_upper_shield'"/>
+			<decal_mesh enabled="true" name="'g_upper_shield'"/>
+			<object enabled="true" name="'g_front_shield_glass'"/>
+			<decal_mesh enabled="true" name="'g_front_shield_glass'"/>
+			<debug text="'Last bullets damage ammount = ' .. damage"/>
+		</sequence>
+	</unit>
+</table>

@@ -1,0 +1,8 @@
+<materials version="3">
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_dah_turret" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/vehicles/dah_turret_ceiling_hatch/dah_turret_ceiling_hatch_df"/>
+        <bump_normal_texture file="units/pd2_dlc_dah/vehicles/dah_turret_ceiling_hatch/dah_turret_ceiling_hatch_nm"/>
+        <material_texture file="units/pd2_dlc_dah/vehicles/dah_turret_ceiling_hatch/dah_turret_ceiling_hatch_gsma"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>	
+    </material>
+</materials>

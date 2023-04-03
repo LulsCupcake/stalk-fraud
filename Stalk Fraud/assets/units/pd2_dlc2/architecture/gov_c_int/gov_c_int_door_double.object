@@ -1,0 +1,33 @@
+<dynamic_object>
+    <diesel orientation_object="rp_gov_c_int_door_double" materials="units/pd2_dlc2/architecture/gov_c_int/gov_c_int_door_double" />
+    <sequence_manager file="units/pd2_dlc2/architecture/gov_c_int/gov_c_int_door_double" />
+	
+	<animations>
+		<animation_group name="anim_doors" enabled="false">
+			<object name="a_door_1" />
+			<object name="a_door_2" />
+		</animation_group>
+	</animations>
+	
+	<bodies>
+		<body name="body_door_01" enabled="true" template="animated" >
+				<object name="a_door_1" />
+				<object name="g_door_1" collision_type="box" padding="-2.5"/>
+		</body>
+		<body name="body_door_02" enabled="true" template="animated" >
+				<object name="a_door_2" />
+				<object name="g_door_2" collision_type="box" padding="-2.5"/>
+		</body>
+	</bodies>
+	
+	<decal_surfaces default_material="metal" static="true">
+        <!--<decal_mesh name="dm_concrete" material="concrete" enabled="true"/>-->
+    </decal_surfaces>
+	
+	<graphics>
+        <object enabled="true" name="g_door_1" />
+        <object enabled="true" name="g_door_2" />
+        <object enabled="true" name="g_frame" />
+	</graphics>
+	
+</dynamic_object>

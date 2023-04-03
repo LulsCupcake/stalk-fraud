@@ -1,0 +1,34 @@
+<table>
+	<unit>
+		<sequence editable_state="true" name="'hide'" triggable="true">
+			<body enabled="false" name="'body_static'"/>
+			<decal_mesh enabled="false" name="'dm_plastic'"/>
+			<object enabled="false" name="'g_swineline'"/>
+			<interaction enabled="false"/>
+		</sequence>
+		<sequence editable_state="true" name="'show_enable_interaction'" triggable="true">
+			<body enabled="true" name="'body_static'"/>
+			<decal_mesh enabled="true" name="'dm_plastic'"/>
+			<object enabled="true" name="'g_swineline'"/>
+			<interaction enabled="'false'"/>
+		</sequence>
+		<sequence name=" 'make_dynamic' ">
+			<slot slot="11"/>
+			<body enabled="false" name=" 'body_static' "/>
+			<body enabled="true" name=" 'body_dynamic' "/>
+			<physic_effect name="'core/physic_effects/sequencemanager_push'" position="object_pos('rp_tag_prop_office_stapler')" rotation="object_rot('rp_tag_prop_office_stapler')" target="rp_tag_prop_office_stapler"/>
+		</sequence>
+		<body editable_state="true" name=" 'body_static' ">
+			<endurance bullet="1" explosion="1" melee="0.5">
+				<run_sequence name=" 'make_dynamic' "/>
+			</endurance>
+		</body>
+		<sequence editable_state="true" name="'load'" triggable="true"/>
+		<sequence editable_state="false" name="'interact'" triggable="false">
+			<decal_mesh enabled="false" name="'dm_plastic'"/>
+			<object enabled="false" name="'g_swineline'"/>
+			<body enabled="false" name="'body_static'"/>
+			<body enabled="false" name="'body_dynamic'"/>
+		</sequence>
+	</unit>
+</table>

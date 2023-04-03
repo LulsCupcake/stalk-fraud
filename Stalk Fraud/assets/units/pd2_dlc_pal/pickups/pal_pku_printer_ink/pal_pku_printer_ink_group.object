@@ -1,0 +1,18 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_pal/pickups/pal_pku_printer_ink/pal_pku_printer_ink" orientation_object="rp_pal_pku_printer_ink_group" />
+	<sequence_manager file="units/pd2_dlc_pal/pickups/pal_pku_printer_ink/pal_pku_printer_ink_group"/>
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_pal_pku_printer_ink_group" />
+			<object name="c_box" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<graphics>
+		<graphic_group name="graphics_group" enabled="true">
+			<lod_object name="lod_g">
+				<object name="g_lod0" enabled="true" max_distance="1500" />
+				<object name="g_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+	</graphics>
+</dynamic_object>

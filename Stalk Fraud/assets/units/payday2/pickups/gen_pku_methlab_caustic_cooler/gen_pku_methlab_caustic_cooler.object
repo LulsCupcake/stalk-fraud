@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/payday2/pickups/gen_pku_methlab_caustic_cooler/gen_pku_methlab_caustic_cooler" orientation_object="rp_gen_pku_methlab_caustic_cooler" />
+	<sequence_manager file="units/payday2/pickups/gen_pku_methlab_caustic_cooler/gen_pku_methlab_caustic_cooler" />
+	
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="c_box" collision_type="box" padding="-2.5"/>
+		</body>
+	</bodies>
+
+	<decal_surfaces default_material="plastic">
+		<decal_mesh name="dm_dm" enabled="true" material="plastic" />
+	</decal_surfaces>
+
+	<graphics>
+		<object name="g_cooler" 		enabled="true"  />
+		<object name="g_cooler_outline" enabled="false"  />
+	</graphics>
+
+</dynamic_object>

@@ -1,0 +1,8 @@
+<materials version="3">
+	<material name="mat_printer_ink" render_template="generic:DIFFUSE_TEXTURE" version="2">
+		<diffuse_texture file="units/pd2_dlc_pal/pickups/pal_pku_printer_ink/pal_pku_printer_ink_df" />
+	</material>
+	<material name="mat_printer_ink_lod" render_template="generic:DIFFUSE_TEXTURE" version="2">
+		<diffuse_texture file="units/pd2_dlc_pal/pickups/pal_pku_printer_ink/pal_pku_printer_ink_df" mip="3" />
+	</material>
+</materials>

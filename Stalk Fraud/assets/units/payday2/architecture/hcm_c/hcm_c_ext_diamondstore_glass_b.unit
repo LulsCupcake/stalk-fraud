@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<unit type="hcm" slot="1">
+    <object file="units/payday2/architecture/hcm_c/hcm_c_ext_diamondstore_glass_b" />
+	<network sync="spawn"/>
+
+	<dependencies>
+		<depends_on effect="effects/payday2/particles/window/storefront_window_large"/>
+	</dependencies>
+
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+		<extension name="attention" class="AIAttentionObject" />
+	</extensions>
+</unit>

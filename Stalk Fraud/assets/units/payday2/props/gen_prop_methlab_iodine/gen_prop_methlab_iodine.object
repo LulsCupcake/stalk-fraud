@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/payday2/props/gen_prop_methlab_iodine/gen_prop_methlab_iodine" orientation_object="rp_gen_prop_methlab_iodine" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="c_c" collision_type="box" padding="-2.5"/>
+		</body>
+	</bodies>
+
+	<graphics>
+		<object name="g_iodine" enabled="true"  />
+	</graphics>
+</dynamic_object>

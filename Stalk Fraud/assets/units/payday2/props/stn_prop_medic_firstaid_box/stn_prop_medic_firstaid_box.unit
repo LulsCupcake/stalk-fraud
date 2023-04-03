@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<unit type="stn" slot="14">
+	<object file="units/payday2/props/stn_prop_medic_firstaid_box/stn_prop_medic_firstaid_box" />
+	<network sync="spawn"/>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />		
+		<extension name="base" class="CustomDoctorBagBase" >
+			<var name="upgrade_lvl" value="1" />
+		</extension>
+		<extension name="damage" class="UnitDamage" />
+		<extension name="interaction" class="DoctorBagBaseInteractionExt">
+			<var name="tweak_data" value="firstaid_box" />
+		</extension>
+	</extensions>
+	<sounds>
+		<default_soundsource source="rp_stn_prop_medic_firstaid_box"/>
+	</sounds>
+</unit>

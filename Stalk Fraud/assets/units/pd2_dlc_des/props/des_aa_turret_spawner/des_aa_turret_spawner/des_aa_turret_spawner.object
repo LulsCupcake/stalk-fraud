@@ -1,0 +1,36 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_des/props/des_aa_turret_spawner/des_aa_turret_spawner/des_aa_turret_spawner" orientation_object="rp_des_aa_turret_spawner" />
+	<sequence_manager file="units/pd2_dlc_des/props/des_aa_turret_spawner/des_aa_turret_spawner/des_aa_turret_spawner" />
+	<animations>
+		<animation_group name="anim" enabled="false">
+			<object name="a_hatch_left_1" />
+			<object name="a_hatch_right_1" />
+			<object name="a_hatch_left_2" />
+			<object name="a_hatch_right_2" />
+		</animation_group>
+	</animations>
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_des_aa_turret_spawner" />
+			<object name="c_convex_frame" collision_type="convex" padding="-2.5" />
+		</body>
+		<body name="body_editor" enabled="true" template="editor">
+			<object name="rp_des_aa_turret_spawner" />
+			<object name="c_convex_frame" collision_type="convex" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces>
+		<decal_mesh name="g_frame" enabled="true" material="steel" />
+		<decal_mesh name="g_hatch_right_1" enabled="true" material="steel" />
+		<decal_mesh name="g_hatch_left_1" enabled="true" material="steel" />
+		<decal_mesh name="g_hatch_right_2" enabled="true" material="steel" />
+		<decal_mesh name="g_hatch_left_2" enabled="true" material="steel" />
+	</decal_surfaces>
+	<graphics>
+		<object name="g_frame" enabled="true" />
+		<object name="g_hatch_right_1" enabled="true" />
+		<object name="g_hatch_left_1" enabled="true" />
+		<object name="g_hatch_right_2" enabled="true" />
+		<object name="g_hatch_left_2" enabled="true" />
+	</graphics>
+</dynamic_object>

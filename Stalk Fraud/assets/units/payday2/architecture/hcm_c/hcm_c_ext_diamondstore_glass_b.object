@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<dynamic_object>
+    <diesel materials="units/payday2/architecture/hcm_c/hcm_c" orientation_object="rp_hcm_c_ext_diamondstore_glass_b" />
+    <sequence_manager file="units/payday2/architecture/hcm_c/hcm_c_ext_diamondstore_glass_b" />
+    <bodies>
+
+
+        <body name="body_glass1" enabled="true" template="static" remove_ray_type="vis_graph ai_vision">
+             <object name="rp_hcm_c_ext_diamondstore_glass_b" />
+            <object name="c_box_glass_01" collision_type="box" padding="-2.5"/>
+        </body>
+    </bodies>
+
+
+    
+    <graphics>      
+        
+        <object enabled="false" name="g_glass_1shatter" />
+        <object enabled="true" name="g_glass_1" />
+        <object enabled="false" name="g_glass_1crack" />
+
+    </graphics>
+    
+</dynamic_object>

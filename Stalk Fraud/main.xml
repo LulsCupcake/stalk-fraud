@@ -1,0 +1,213 @@
+<table name="Stalk Fraud">
+	<Package file="packagedata/mod_bofa/add.xml" id="modpackages/mod_bofa"/>
+	<Sounds directory="assets/sounds">
+		<sound id="painsk_briefing" path="briefing.ogg"/>
+	</Sounds>
+	<Achievements banner="guis/textures/p_sf_banner" icon="guis/textures/p_sf_icon" id="sf_pain_achievements">
+		<achievement icon="guis/textures/p_sf_owo" id="p_sf_owo" rank="1" reward_amount="3" reward_type="cc"/>
+		<achievement icon="guis/textures/p_sf_cook" id="p_sf_cook" rank="3" reward_amount="15" reward_type="cc"/>
+		<achievement icon="guis/textures/p_sf_p2p" id="p_sf_p2p" rank="3" reward_amount="15" reward_type="cc"/>
+		<achievement hidden_achievement="true" icon="guis/textures/p_sf_secret" id="p_sf_secret" rank="4" reward_amount="6" reward_type="cc"/>
+		<achievement icon="guis/textures/p_sf_gg" id="p_sf_gg" rank="2" reward_amount="6" reward_type="cc"/>
+		<achievement icon="guis/textures/p_sf_ds" id="p_sf_ds" rank="4" reward_amount="30" reward_type="cc"/>
+		<achievement icon="guis/textures/p_sf_baby" id="p_sf_baby" rank="4" reward_amount="30" reward_type="cc"/>
+	</Achievements>
+	<AddFiles directory="assets">
+		<texture load="true" path="guis/thechase_loading"/>
+		<texture load="true" path="guis/thechase_icon"/>
+		<texture load="true" path="guis/textures/p_sf_baby"/>
+		<texture load="true" path="guis/textures/p_sf_ds"/>
+		<texture load="true" path="guis/textures/p_sf_cook"/>
+		<texture load="true" path="guis/textures/p_sf_gg"/>
+		<texture load="true" path="guis/textures/p_sf_owo"/>
+		<texture load="true" path="guis/textures/p_sf_p2p"/>
+		<texture load="true" path="guis/textures/p_sf_secret"/>
+		<texture load="true" path="guis/textures/p_sf_icon"/>
+		<texture load="true" path="guis/textures/p_sf_banner"/>
+		<texture path="guis/dlcs/universalnotxt/weapon_skins/universalnotxt"/>
+		<texture load="true" path="guis/textures/pain_002_icon"/>
+	</AddFiles>
+	<AssetUpdates id="24638" provider="modworkshop" use_local_dir="true" version="3.4"/>
+	<HeistMusic directory="assets\music\pain2" id="pain2">
+		<event name="setup" source="stealth.ogg"/>
+		<event name="anticipation" source="anticiloop.ogg" start_source="anticipation.ogg"/>
+		<event name="assault" source="assault.ogg" start_source="assaultintro.ogg"/>
+		<event name="control" source="control.ogg" start_source="controlintro.ogg"/>
+	</HeistMusic>
+	<Hooks directory="hooks">
+		<hook file="musicmanager.lua" source_file="lib/managers/musicmanager"/>
+		<hook file="contractorheistitem.lua" source_file="lib/managers/menu/items/contractbrokerheistitem"/>
+	</Hooks>
+	<Localization default="english.txt" directory="loc">
+		<localization file="italian.txt" language="italian"/>
+		<localization file="english.txt" language="english"/>
+	</Localization>
+	<WeaponSkin desc="bm_wskn_universalnotxt_desc" id="universalnotxt" name="bm_wskn_universalnotxt" rarity="epic" skin_folder="assets/weapon_skin/skins/universalnotxt" universal="true" weapon_id="flint"/>
+	<contact assets_gui="guis/mission_briefing/preload_contact_bain" id="Pain" name_id="contract_pain" package="packages/contact_bain"/>
+	<level ai_group_type="america" bonus_escape="true" briefing_dialog="painsk_briefing" cube="cube_apply_heist_bank" ghost_bonus="0.1" id="thechase" intro_event="" load_screen="guis/thechase_loading" music="heist">
+		<add file="levels/thechase/add.xml"/>
+		<assets/>
+		<hooks directory="hooks">
+			<hook file="dialogmanager.lua" source_file="lib/tweak_data/tweakdata"/>
+			<hook file="InteractionTweakData.lua" source_file="lib/tweak_data/interactiontweakdata"/>
+			<hook file="copbase.lua" source_file="lib/units/enemies/cop/copbase"/>
+			<hook file="groupaitweakdata.lua" source_file="lib/tweak_data/groupaitweakdata"/>
+			<hook file="charactertweakdata.lua" source_file="lib/tweak_data/charactertweakdata"/>
+			<hook file="vehicletweakdata.lua" source_file="lib/tweak_data/vehicletweakdata"/>
+			<hook file="CarryTweakData.lua" source_file="lib/tweak_data/carrytweakdata"/>
+			<hook file="ingamewaitingforrespawn.lua" source_file="lib/states/ingamewaitingforrespawn"/>
+			<hook file="GameOverState.lua" source_file="lib/states/gameoverstate"/>
+			<hook file="IngameWaitingForPlayersState.lua" source_file="lib/states/ingamewaitingforplayers"/>
+			<hook file="achievementmanager.lua" source_file="lib/managers/dialogmanager"/>
+			<hook file="trademanager.lua" source_file="lib/managers/trademanager"/>
+			<hook file="moneymanager.lua" source_file="lib/managers/moneymanager"/>
+			<hook file="civilianbrain.lua" source_file="lib/units/civilians/civilianbrain"/>
+		</hooks>
+		<outro_event>
+			<value_node value=""/>
+		</outro_event>
+		<packages>
+			<value_node value="packages/narr_hox_1"/>
+			<value_node value="levels/narratives/dentist/hox/stage_1/world"/>
+			<value_node value="levels/narratives/dentist/hox/stage_1/world_sounds"/>
+			<value_node value="levels/narratives/dentist/hox/stage_1/world/world"/>
+			<value_node value="levels/narratives/dentist/hox/stage_1/editor_only/editor_only"/>
+			<value_node value="levels/narratives/dentist/hox/stage_1/garage/garage"/>
+			<value_node value="packages/narr_red2"/>
+			<value_node value="levels/instances/unique/pet_planecage/world/world"/>
+			<value_node value="levels/narratives/bain/big/editor_only/editor_only"/>
+			<value_node value="levels/narratives/bain/roberts/editor_only/editor_only"/>
+			<value_node value="levels/instances/unique/hlm_box_contraband002/world/world"/>
+			<value_node value="levels/narratives/vlad/peta/stage2/collision/collision"/>
+			<value_node value="levels/narratives/e_welcome_to_the_jungle/stage_1/night_only/night_only"/>
+			<value_node value="levels/instances/unique/brb/civ_intro_spawner/world/world"/>
+			<value_node value="levels/narratives/classics/glace/editor_only/editor_only"/>
+			<value_node value="levels/instances/shared/methlab/world/world"/>
+			<value_node value="levels/narratives/locke/des/world/world"/>
+			<value_node value="packages/job_kenaz"/>
+			<value_node value="levels/instances/unique/hox_fbi_armory/world/world"/>
+			<value_node value="packages/narr_jerry2"/>
+			<value_node value="levels/narratives/bain/hvh/world_sounds"/>
+			<value_node value="modpackages/mod_bofa"/>
+		</packages>
+		<sounds directory="assets/sounds">
+			<sound id="painsk_game_over" path="game_over.ogg"/>
+			
+			
+			<sounds directory="vo/s">
+				<sound id="s_arena1" path="s_arena1.ogg" subtitle_id="s_arena1_sub"/>
+				<sound id="s_arena2" path="s_arena2.ogg" subtitle_id="s_arena2_sub"/>
+				<sound id="s_arena3" path="s_arena3.ogg" subtitle_id="s_arena3_sub"/>
+				<sound id="s_bo_dead1" path="s_bo_dead1.ogg" subtitle_id="s_bo_dead1_sub"/>
+				<sound id="s_bo_dead2" path="s_bo_dead2.ogg" subtitle_id="s_bo_dead2_sub"/>
+				<sound id="s_bo_dead4" path="s_bo_dead4.ogg" subtitle_id="s_bo_dead4_sub"/>
+				<sound id="s_bo_gone1" path="s_bo_gone1.ogg" subtitle_id="s_bo_gone1_sub"/>
+				<sound id="s_bo_gone2" path="s_bo_gone2.ogg" subtitle_id="s_bo_gone2_sub"/>
+				<sound id="s_bo_gone3" path="s_bo_gone3.ogg" subtitle_id="s_bo_gone3_sub"/>
+				<sound id="s_button1" path="s_button1.ogg" subtitle_id="s_button1_sub"/>
+				<sound id="s_button2" path="s_button2.ogg" subtitle_id="s_button2_sub"/>
+				<sound id="s_button4" path="s_button4.ogg" subtitle_id="s_button4_sub"/>
+				<sound id="s_cash1" path="s_cash1.ogg" subtitle_id="s_cash1_sub"/>
+				<sound id="s_cash2" path="s_cash2.ogg" subtitle_id="s_cash2_sub"/>
+				<sound id="s_cash3" path="s_cash3.ogg" subtitle_id="s_cash3_sub"/>
+				<sound id="s_cash4" path="s_cash4.ogg" subtitle_id="s_cash4_sub"/>
+				<sound id="s_drill1" path="s_drill1.ogg" subtitle_id="s_drill1_sub"/>
+				<sound id="s_drill2" path="s_drill2.ogg" subtitle_id="s_drill2_sub"/>
+				<sound id="s_drill3" path="s_drill3.ogg" subtitle_id="s_drill3_sub"/>
+				<sound id="s_find_bo1" path="s_find_bo1.ogg" subtitle_id="s_find_bo1_sub"/>
+				<sound id="s_find_bo2" path="s_find_bo2.ogg" subtitle_id="s_find_bo2_sub"/>
+				<sound id="s_find_bo3" path="s_find_bo3.ogg" subtitle_id="s_find_bo3_sub"/>
+				<sound id="s_find_button1" path="s_find_button1.ogg" subtitle_id="s_find_button1_sub"/>
+				<sound id="s_find_button2" path="s_find_button2.ogg" subtitle_id="s_find_button2_sub"/>
+				<sound id="s_find_button3" path="s_find_button3.ogg" subtitle_id="s_find_button3_sub"/>
+				<sound id="s_glass1" path="s_glass1.ogg" subtitle_id="s_glass1_sub"/>
+				<sound id="s_glass2" path="s_glass2.ogg" subtitle_id="s_glass2_sub"/>
+				<sound id="s_glass3" path="s_glass3.ogg" subtitle_id="s_glass3_sub"/>
+				<sound id="s_glass4" path="s_glass4.ogg" subtitle_id="s_glass4_sub"/>
+				<sound id="s_key_again1" path="s_key_again1.ogg" subtitle_id="s_key_again1_sub"/>
+				<sound id="s_key_again2" path="s_key_again2.ogg" subtitle_id="s_key_again2_sub"/>
+				<sound id="s_key1" path="s_key1.ogg" subtitle_id="s_key1_sub"/>
+				<sound id="s_key2" path="s_key2.ogg" subtitle_id="s_key2_sub"/>
+				<sound id="s_key3" path="s_key3.ogg" subtitle_id="s_key3_sub"/>
+				<sound id="s_tie1" path="s_tie1.ogg" subtitle_id="s_tie1_sub"/>
+				<sound id="s_tie2" path="s_tie2.ogg" subtitle_id="s_tie2_sub"/>
+				<sound id="s_tie3" path="s_tie3.ogg" subtitle_id="s_tie3_sub"/>
+				<sound id="s_tie4" path="s_tie4.ogg" subtitle_id="s_tie4_sub"/>
+				<sound id="s_timer1" path="s_timer1.ogg" subtitle_id="s_timer1_sub"/>
+				<sound id="s_timer2" path="s_timer2.ogg" subtitle_id="s_timer2_sub"/>
+				<sound id="s_turrets1" path="s_turrets1.ogg" subtitle_id="s_turrets1_sub"/>
+				<sound id="s_turrets2" path="s_turrets2.ogg" subtitle_id="s_turrets2_sub"/>
+				<sound id="s_turrets3" path="s_turrets3.ogg" subtitle_id="s_turrets3_sub"/>
+				<sound id="s_sbo1" path="s_sbo1.ogg" subtitle_id="s_sbo1_sub"/>
+				<sound id="s_sbo2" path="s_sbo2.ogg" subtitle_id="s_sbo2_sub"/>
+				<sound id="s_sbo3" path="s_sbo3.ogg" subtitle_id="s_sbo3_sub"/>
+				<sound id="s_sbo4" path="s_sbo4.ogg" subtitle_id="s_sbo4_sub"/>
+				<sound id="s_sbo5" path="s_sbo5.ogg" subtitle_id="s_sbo5_sub"/>
+			</sounds>
+		</sounds>
+		<script_data_mods directory="scriptdata">
+			<mod replacement="objectives.objective" replacement_type="custom_xml" target_ext="objective" target_path="gamedata/objectives">
+				<options merge_mode="add" mode="add"/>
+			</mod>
+		</script_data_mods>
+	</level>
+	<narrative briefing_event="" contact="Pain" icon="guis/thechase_icon" id="thechase" pain_002="true" pain_002_icon="guis/textures/pain_002_icon">
+		<chain>
+			<table level_id="thechase" type="d" type_id="heist_type_assault"/>
+		</chain>
+		<contract_cost>
+			<value_node value="4000"/>
+			<value_node value="8000"/>
+			<value_node value="20000"/>
+			<value_node value="40000"/>
+			<value_node value="100000"/>
+			<value_node value="100000"/>
+			<value_node value="100000"/>
+		</contract_cost>
+		<crimenet_callouts>
+			<value_node value="nothing"/>
+		</crimenet_callouts>
+		<crimenet_videos>
+			<value_node value="cn_branchbank2"/>
+		</crimenet_videos>
+		<debrief_event>
+			<value_node value=""/>
+		</debrief_event>
+		<experience_mul>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="2"/>
+			<value_node value="2"/>
+			<value_node value="3"/>
+			<value_node value="3"/>
+			<value_node value="3"/>
+		</experience_mul>
+		<max_mission_xp>
+			<value_node value="1"/>
+			<value_node value="2"/>
+			<value_node value="3"/>
+			<value_node value="4"/>
+			<value_node value="5"/>
+			<value_node value="6"/>
+			<value_node value="7"/>
+		</max_mission_xp>
+		<min_mission_xp>
+			<value_node value="1"/>
+			<value_node value="2"/>
+			<value_node value="3"/>
+			<value_node value="4"/>
+			<value_node value="5"/>
+			<value_node value="6"/>
+			<value_node value="7"/>
+		</min_mission_xp>
+		<payout>
+			<value_node value="5.73145571e+004"/>
+			<value_node value="0"/>
+			<value_node value="0"/>
+			<value_node value="0"/>
+			<value_node value="0"/>
+			<value_node value="0"/>
+			<value_node value="0"/>
+		</payout>
+	</narrative>
+</table>

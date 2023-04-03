@@ -1,0 +1,13 @@
+<unit type="pal" slot="1">
+	<network sync="spawn"/>
+	<object file="units/pd2_dlc_pal/pickups/pal_pku_printer_ink/pal_pku_printer_ink_group" />
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+		<extension name="interaction" class="SpecialEquipmentInteractionExt">
+			<var name="_special_equipment" value="printer_ink" />
+			<var name="_remove_on_interact" value="false" />
+			<var name="tweak_data" value="press_printer_ink" />
+		</extension>
+	</extensions>
+</unit>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/payday2/pickups/gen_pku_methlab_bubbling/gen_pku_methlab_bubbling" orientation_object="rp_gen_pku_methlab_bubbling" />
+	<sequence_manager file="units/payday2/pickups/gen_pku_methlab_bubbling/gen_pku_methlab_bubbling" />
+	
+	<bodies>
+		<body name="static_body" enabled="true" template="editor">
+			<object name="rp_gen_pku_methlab_bubbling" />
+			<object name="c_box" collision_type="box" padding="-2.5" />
+		</body>		
+	</bodies>	
+
+	<graphics>
+		<object name="g_glass_dmg_2" 	 		enabled="true"  />
+		<object name="g_glass_dmg_1" 	 		enabled="true"  />
+
+		<object name="g_glass_1" 	 		enabled="true"  />
+		<object name="g_glass_2" 	 		enabled="true"  />
+		<object name="g_glass_3" 	 		enabled="true"  />
+		<object name="g_glass_dmg_3" 		enabled="false"  />
+		<object name="g_bubbling" 	 		enabled="true"  />
+		<object name="g_bubbling_outline" 	enabled="false"  />
+		<object name="g_bubbling_dest" 	 	enabled="false"  />
+		
+	</graphics>
+
+</dynamic_object>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/payday2/pickups/gen_pku_methlab_liquid_meth/gen_pku_methlab_liquid_meth" orientation_object="rp_gen_pku_methlab_liquid_meth" />
+	<sequence_manager file="units/payday2/pickups/gen_pku_methlab_liquid_meth/gen_pku_methlab_liquid_meth" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_gen_pku_methlab_liquid_meth" />
+			<object name="c_box_01" 	collision_type="box" />
+			<object name="c_convex_01" 	collision_type="convex" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="sheet_metal">
+		<decal_mesh name="dm_dm" 		enabled="true" material="sheet_metal" />
+	</decal_surfaces>
+	<graphics>
+		<object name="g_liquid_meth" 				enabled="true"  />
+		<object name="g_liquid_meth_outline" 		enabled="false"  />
+	</graphics>
+</dynamic_object>

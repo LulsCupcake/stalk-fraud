@@ -1,0 +1,18 @@
+<unit type="nls" slot="1">
+	<object file="units/pd2_dlc_nails/props/nls_prop_methlab_meth/nls_prop_methlab_meth_a_interactable" />
+  <network sync="spawn" />
+  <dependencies>
+	<depends_on effect="effects/payday2/particles/grab/grab_coke" />
+  </dependencies>
+  <extensions>
+	<extension name="unit_data" class="ScriptUnitData" />
+	<extension name="damage" class="UnitDamage" />
+	<extension name="interaction" class="CarryInteractionExt">
+		<var name="tweak_data" value="taking_meth_huge" />
+		<var name="_interact_object" value="interact"/>
+	</extension>
+	<extension name="carry_data" class="CarryData">
+		<var name="_carry_id" value="meth_half" />
+	</extension>
+  </extensions>
+</unit>

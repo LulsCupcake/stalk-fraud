@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<unit type="gen" slot="1">
+	<network sync="spawn"/>
+	<object file="units/payday2/pickups/gen_pku_methlab_bubbling/gen_pku_methlab_bubbling" />
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+		<extension name="interaction" class="UseInteractionExt">
+			<var name="tweak_data" value="methlab_bubbling" />
+		</extension>
+	</extensions>
+</unit>

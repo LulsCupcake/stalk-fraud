@@ -1,0 +1,21 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_nails/props/nls_prop_methlab_meth/nls_prop_methlab_metalplate" orientation_object="rp_nls_prop_methlab_meth_d_interactable" />
+	<sequence_manager file="units/pd2_dlc_nails/props/nls_prop_methlab_meth/nls_prop_methlab_meth_d_interactable" />
+	<bodies>
+		<body name="body_static_01" enabled="true" template="static">
+			<object name="rp_nls_prop_methlab_meth_d_interactable" />
+			<object name="c_mesh_mopp_01" collision_type="mesh_mopp" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="glass_breakable">
+		<decal_mesh name="dm_glass_breakable_01" enabled="true" material="glass_breakable" />
+	</decal_surfaces>
+	<graphics>
+		<graphic_group name="g_meth_01_grp" enabled="true">
+			<lod_object name="lod_g_meth_01">
+				<object name="g_meth_01_lod0" enabled="true" max_distance="4000" />
+				<object name="g_meth_01_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+	</graphics>
+</dynamic_object>

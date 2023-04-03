@@ -1,0 +1,14 @@
+<unit type="tag" slot="1">
+	<object file="units/pd2_dlc_tag/props/tag_prop_office_stapler/tag_prop_office_stapler" />
+	<network sync="spawn"/>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+		<extension name="interaction" class="SpecialEquipmentInteractionExt">
+			<var name="_special_equipment" value="stapler" />
+        	<var name="tweak_data" value="tag_take_stapler" />
+        	<var name="_remove_on_interact" value="true" />
+        	<var name="_interact_object" value="interaction"/>
+        </extension>
+	</extensions>
+</unit>

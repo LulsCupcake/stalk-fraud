@@ -1,0 +1,14 @@
+<unit type="des" slot="1">
+	<object file="units/pd2_dlc_des/props/des_aa_turret_spawner/des_aa_turret_spawner/des_aa_turret_spawner" />
+	<network sync="spawn"/>
+	<dependencies>
+		<depends_on unit="units/pd2_dlc_des/vehicles/des_aa_turret/des_aa_turret" />
+	</dependencies>
+	<extensions>
+		<extension name="base" class="AnimatedVehicleBase">
+			<var name="_body_name" value="rp_des_aa_turret_spawner"/>
+		</extension>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+	</extensions>
+</unit>

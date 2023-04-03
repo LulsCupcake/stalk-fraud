@@ -1,0 +1,15 @@
+<table>
+    <objective description="obj_truck_open_desc" id="obj_truck_open" prio="1" text="obj_truck_open" xp_weight="1"/>
+    <objective description="obj_13_door_desc" id="obj_13_door" prio="1" text="obj_13_door" xp_weight="1"/>
+    <objective description="obj_13_cage_desc" id="obj_13_cage" prio="1" text="obj_13_cage" xp_weight="1"/>
+    <objective description="obj_13_computer_desc" id="obj_13_computer" prio="1" text="obj_13_computer" xp_weight="1"/>
+    <objective description="obj_24_vault_desc" id="obj_24_vault" prio="1" text="obj_24_vault" xp_weight="1"/>
+    <objective description="obj_24_lady_desc" id="obj_24_lady" prio="1" text="obj_24_lady" xp_weight="1"/>
+    <objective description="obj_24_jump_desc" id="obj_24_jump" prio="1" text="obj_24_jump" xp_weight="1"/>
+    <objective description="obj_cook_bike_desc" id="obj_cook_bike" prio="1" text="obj_cook_bike" xp_weight="1"/>
+	<objective description="obj_ram_door_desc" id="obj_open_doors" prio="1" text="obj_ram_door" xp_weight="1"/>
+    <objective description="obj_open_doors_desc" id="obj_open_doors" prio="1" text="obj_open_doors" xp_weight="1"/>
+    <objective description="obj_kill_bo_desc" id="obj_kill_bo" prio="1" text="obj_kill_bo" xp_weight="1"/>
+    <objective description="obj_cook_or_leave_desc" id="obj_cook_or_leave" prio="1" text="obj_cook_or_leave" xp_weight="1"/>
+    <objective description="obj_escape_desc" id="obj_escape" prio="1" text="obj_escape" xp_weight="1"/>
+</table>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<unit type="air" slot="1">
+	<object file="units/pd2_dlc2/vehicles/air_vehicle_cessna_206_csgo/air_vehicle_cessna_206_csgo" />
+	<network sync="spawn"/>
+	<dependencies>
+		<depends_on physic_effect="physic_effects/push_sphere" />
+		<depends_on effect="effects/payday2/particles/explosions/smoke_explosion/smoke" />
+		<depends_on effect="effects/payday2/particles/explosions/plane_explosion" />
+		<depends_on effect="effects/particles/dest/engine_smoke" />
+		<depends_on bnk="soundbanks/regular_sfx" />
+	</dependencies>  
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+		<extension name="interaction" class="UseInteractionExt">
+			<var name="tweak_data" value="raise_balloon" />
+			<var name="_interact_object" value="interact"/>
+		</extension>
+	</extensions>
+
+	<sounds>
+		<default_soundsource source="a_body"/>
+		<soundsource name="snd" source="a_body" />
+	</sounds>
+</unit> 

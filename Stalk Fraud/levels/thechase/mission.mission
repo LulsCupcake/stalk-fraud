@@ -1,0 +1,5 @@
+<table>
+	<editor_only file="editor_only/editor_only"/>
+	<garage file="garage/garage"/>
+	<world file="world/world"/>
+</table>

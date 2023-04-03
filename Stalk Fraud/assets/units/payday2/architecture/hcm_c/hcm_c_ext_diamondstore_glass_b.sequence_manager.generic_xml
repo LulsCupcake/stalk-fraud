@@ -1,0 +1,88 @@
+<generic_scriptdata type="table">
+	<entry index="1" type="table" _id="13" metatable="unit">
+		<entry index="1" type="table" _id="11" metatable="body">
+			<entry index="1" type="table" _id="3" metatable="endurance">
+				<entry index="1" type="table" _id="1" metatable="run_sequence">
+					<entry key="name" type="string" value="'int_seq_glass1_shatter'"/>
+				</entry>
+				<entry key="bullet" type="number" value="0.1"/>
+				<entry key="explosion" type="number" value="0.1"/>
+				<entry key="melee" type="number" value="0.1"/>
+				<entry key="run_sequence" type="table" _ref="1"/>
+			</entry>
+			<entry index="2" type="table" metatable="endurance">
+				<entry index="1" type="table" _id="2" metatable="run_sequence">
+					<entry key="name" type="string" value="'int_seq_glass1_'"/>
+				</entry>
+				<entry key="bullet" type="number" value="2"/>
+				<entry key="explosion" type="number" value="1"/>
+				<entry key="melee" type="number" value="1"/>
+				<entry key="run_sequence" type="table" _ref=""/>
+			</entry>
+			<entry key="endurance" type="table" _ref="3"/>
+			<entry key="name" type="string" value="'body_glass1'"/>
+		</entry>
+		<entry index="2" type="table" _id="12" metatable="sequence">
+			<entry index="1" type="table" _id="5" metatable="object">
+				<entry key="enabled" type="boolean" value="true"/>
+				<entry key="name" type="string" value="'g_glass_1'"/>
+			</entry>
+			<entry index="2" type="table" metatable="object">
+				<entry key="enabled" type="boolean" value="false"/>
+				<entry key="name" type="string" value="'g_glass_1shatter'"/>
+			</entry>
+			<entry index="3" type="table" metatable="object">
+				<entry key="enabled" type="boolean" value="false"/>
+				<entry key="name" type="string" value="'g_glass_1crack'"/>
+			</entry>
+			<entry index="4" type="table" _id="4" metatable="attention">
+				<entry key="giveaway" type="string" value="'glass'"/>
+				<entry key="object_name" type="string" value="'e_e_1'"/>
+				<entry key="operation" type="string" value="'add'"/>
+				<entry key="preset_name" type="string" value="'prop_ene_ntl'"/>
+			</entry>
+			<entry key="attention" type="table" _ref="4"/>
+			<entry key="editable_state" type="boolean" value="false"/>
+			<entry key="name" type="string" value="'int_seq_glass1'"/>
+			<entry key="object" type="table" _ref="5"/>
+			<entry key="triggable" type="boolean" value="false"/>
+		</entry>
+		<entry index="3" type="table" metatable="sequence">
+			<entry index="1" type="table" _id="7" metatable="body">
+				<entry key="enabled" type="boolean" value="false"/>
+				<entry key="name" type="string" value="'body_glass1'"/>
+			</entry>
+			<entry index="2" type="table" _id="9" metatable="object">
+				<entry key="enabled" type="boolean" value="false"/>
+				<entry key="name" type="string" value="'g_glass_1shatter'"/>
+			</entry>
+			<entry index="3" type="table" metatable="object">
+				<entry key="enabled" type="boolean" value="true"/>
+				<entry key="name" type="string" value="'g_glass_1crack'"/>
+			</entry>
+			<entry index="4" type="table" _id="10" metatable="sound">
+				<entry key="action" type="string" value="'play'"/>
+				<entry key="event" type="string" value="'window_large_shatter'"/>
+				<entry key="object" type="string" value="'e_e_1'"/>
+			</entry>
+			<entry index="5" type="table" _id="8" metatable="effect">
+				<entry key="name" type="string" value="'effects/payday2/particles/window/storefront_window_large'"/>
+				<entry key="parent" type="string" value="object('e_e_1')"/>
+				<entry key="position" type="string" value="v()"/>
+			</entry>
+			<entry index="6" type="table" _id="6" metatable="alert">
+			</entry>
+			<entry key="alert" type="table" _ref="6"/>
+			<entry key="body" type="table" _ref="7"/>
+			<entry key="editable_state" type="boolean" value="false"/>
+			<entry key="effect" type="table" _ref="8"/>
+			<entry key="name" type="string" value="'int_seq_glass1_crack'"/>
+			<entry key="object" type="table" _ref="9"/>
+			<entry key="sound" type="table" _ref="10"/>
+			<entry key="triggable" type="boolean" value="false"/>
+		</entry>
+		<entry key="body" type="table" _ref="11"/>
+		<entry key="sequence" type="table" _ref="12"/>
+	</entry>
+	<entry key="unit" type="table" _ref="13"/>
+</generic_scriptdata>

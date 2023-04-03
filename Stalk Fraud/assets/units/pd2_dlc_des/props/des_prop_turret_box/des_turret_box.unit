@@ -1,0 +1,6 @@
+<unit type="des" slot="1">
+	<object file="units/pd2_dlc_des/props/des_prop_turret_box/des_turret_box" />
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+	</extensions>
+</unit>

@@ -1,0 +1,16 @@
+<dynamic_object>
+    <diesel orientation_object="rp_gov_d_int_wall_double_door_a_4m" materials="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_lobby" />
+    <bodies>
+        <body enabled="true" template="static" name="static_body" >
+            <object collision_type="box" name="c_box_00" />
+        </body>
+    </bodies>
+    <decal_surfaces default_material="plaster" static="true">
+        <decal_mesh enabled="true" name="dm_plaster" material="plaster" />
+        <decal_mesh enabled="true" name="dm_wood" material="wood" />
+        <decal_mesh enabled="true" name="dm_glass_unbreakable" material="glass_unbreakable" />
+    </decal_surfaces>
+    <graphics>
+        <object enabled="true" name="g_g" />
+    </graphics>
+</dynamic_object>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<unit type="gen" slot="1">
+	<object file="units/pd2_dlc_tng/equipment/gen_interactable_key_case/gen_interactable_key_case_blue" />
+	<network sync="spawn"/>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+		<extension name="interaction" class="UseInteractionExt">
+			<var name="tweak_data" value="pickup_keys" />
+			<var name="_interact_object" value="interact"/>
+		</extension>
+		<extension name="flagged_unit" class="DLCFlaggedUnit">
+			<var name="dlc" value="tango" />
+		</extension>
+	</extensions>
+</unit>

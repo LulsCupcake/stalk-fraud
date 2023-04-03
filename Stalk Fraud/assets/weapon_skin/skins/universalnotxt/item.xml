@@ -1,0 +1,15 @@
+<ugcitem>
+	<param key="type" value="weapon_skin"/>
+	<param key="name" value="notexture"/>
+	<node name="data">
+		<param key="name_id" value="bm_wskn_flint_notexture"/>
+		<param key="pattern_gradient_name" value="patgra_notexture.tga"/>
+		<param key="pattern_pos" value="Vector3(-2, 1.29406, 0)"/>
+		<param key="weapon_id" value="flint"/>
+		<param key="base_gradient_name" value="base_notexture.tga"/>
+		<param key="id" value="n_flint_new_skin_2"/>
+		<param key="reserve_quality" value="true"/>
+		<param key="pattern_name" value="pat_notexture.tga"/>
+	</node>
+	<param key="timestamp" value="2019100050446"/>
+</ugcitem>

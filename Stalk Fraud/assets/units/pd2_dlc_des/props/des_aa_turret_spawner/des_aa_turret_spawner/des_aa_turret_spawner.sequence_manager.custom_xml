@@ -1,0 +1,44 @@
+<table>
+	<unit>
+		<sequence editable_state="true" name="'turret_spawn'" triggable="true">
+			<function extension="'base'" function="'spawn_module'" param1="'units/pd2_dlc_des/vehicles/des_aa_turret/des_aa_turret'" param2="'spawn'" param3="'turret1'"/>
+		</sequence>
+		<sequence editable_state="true" name="'turret_activate'" triggable="true">
+			<animation_group enabled="true" from="0" name="'anim'"/>
+			<function extension="'base'" function="'run_module_function'" param1="'turret1'" param2="'base'" param3="'activate_as_module'" param4="'combatant'" param5="'aa_turret_module'" start_time="8/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'done_turret_destroyed'" triggable="true"/>
+		<sequence editable_state="true" name="'done_turret_disabled'" triggable="true"/>
+		<sequence editable_state="true" name="'hide'" triggable="true">
+			<body enabled="false" name="'body_static'"/>
+			<decal_mesh enabled="false" name="'g_frame'"/>
+			<decal_mesh enabled="false" name="'g_hatch_right_1'"/>
+			<decal_mesh enabled="false" name="'g_hatch_left_1'"/>
+			<decal_mesh enabled="false" name="'g_hatch_right_2'"/>
+			<decal_mesh enabled="false" name="'g_hatch_left_2'"/>
+			<object enabled="false" name="'g_hatch_right_1'"/>
+			<object enabled="false" name="'g_hatch_left_1'"/>
+			<object enabled="false" name="'g_hatch_right_2'"/>
+			<object enabled="false" name="'g_hatch_left_2'"/>
+			<object enabled="false" name="'g_frame'"/>
+			<object enabled="true" name="'body_editor'"/>
+		</sequence>
+		<sequence editable_state="true" name="'show'" triggable="true">
+			<body enabled="true" name="'body_static'"/>
+			<decal_mesh enabled="true" name="'g_frame'"/>
+			<decal_mesh enabled="true" name="'g_hatch_right_1'"/>
+			<decal_mesh enabled="true" name="'g_hatch_left_1'"/>
+			<decal_mesh enabled="true" name="'g_hatch_right_2'"/>
+			<decal_mesh enabled="true" name="'g_hatch_left_2'"/>
+			<object enabled="true" name="'g_hatch_right_1'"/>
+			<object enabled="true" name="'g_hatch_left_1'"/>
+			<object enabled="true" name="'g_hatch_right_2'"/>
+			<object enabled="true" name="'g_hatch_left_2'"/>
+			<object enabled="true" name="'g_frame'"/>
+			<object enabled="false" name="'body_editor'"/>
+		</sequence>
+		<sequence editable_state="true" name="'turret_disable'" triggable="true">
+			<function extension="'base'" function="'run_module_function'" param1="'turret1'" param2="'character_damage'" param3="'disable'"/>
+		</sequence>
+	</unit>
+</table>
