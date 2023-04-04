@@ -27,7 +27,7 @@
 		<texture path="guis/dlcs/universalnotxt/weapon_skins/universalnotxt"/>
 		<texture load="true" path="guis/textures/pain_002_icon"/>
 	</AddFiles>
-	<AssetUpdates id="24638" provider="modworkshop" use_local_dir="true" version="3.4"/>
+	<AssetUpdates id="Painday2/stalk-fraud" provider="github" release="true" version="3.4"/>
 	<HeistMusic directory="assets\music\pain2" id="pain2">
 		<event name="setup" source="stealth.ogg"/>
 		<event name="anticipation" source="anticiloop.ogg" start_source="anticipation.ogg"/>
